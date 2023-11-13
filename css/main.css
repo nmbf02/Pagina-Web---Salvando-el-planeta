@@ -229,7 +229,7 @@ nav ul li a:hover {
   transform: rotate(45deg);
 }
 #nav:checked + .nav-btn i {
-  background: black;
+  background: 389009;
   transition: transform 0.2s ease;
 }
 #nav:checked + .nav-btn i:nth-child(1){
