@@ -86,6 +86,20 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+   /*Formateando el HTML*/
+html{
+  box-sizing: border-box;
+}
+
+*,*:before,*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
 div.hero {
   background-image: url(../img/background01.jpg);
   height: 100vh;
@@ -101,7 +115,7 @@ div.contenido-header {
 .logo {
   float: left;
   margin-left: 50px;
-  margin-top: 30px;
+  margin-top: -30px;
 }
 
 img.logotipo {
@@ -188,7 +202,7 @@ nav ul li a:hover {
   .nav-wrapper ul li a{
     padding: 10px 24px;
     opacity: 0;
-    color: #389009;
+    color: #3B9009;
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 1.2px;
@@ -210,7 +224,7 @@ nav ul li a:hover {
     display: block;
     width: 20px;
     height: 2px;
-    background-color: white;
+    background-color: black;
     border-radius: 2px;
     margin-left: 14px;
   }
@@ -241,11 +255,11 @@ nav ul li a:hover {
 #nav:checked + .nav-btn i:nth-child(3){
   transform: translateY(-6px) rotate(90deg);
 }
-#nav:checked + .nav-wrapper {
+#nav:checked ~ .nav-wrapper {
   z-index: 9990;
   opacity: 1;
 }
-#nav:checked + .nav-wrapper ul li a {
+#nav:checked ~ .nav-wrapper ul li a {
   opacity: 1;
   transform: translateX(0);
 }
