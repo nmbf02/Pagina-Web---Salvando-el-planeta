@@ -86,9 +86,16 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/*
+Fuentes:
+font-family: 'Lato', sans-serif;
+font-family: 'Bellefair', serif;
+*/
 
-   /*Formateando el HTML*/
-html{
+
+/*Formateando el HTML*/
+/*Formatos generales*/
+html {
   box-sizing: border-box;
 }
 
@@ -100,6 +107,119 @@ body {
   background-color: #f2f2f2;
 }
 
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+p, li {
+  font-family: 'Bellefair', serif;
+  font-size: 18px;
+}
+
+.contenedor {
+  width: auto;
+  margin: 40px;
+  padding: 0px;
+}
+
+.span {
+  color: #1ed223;
+}
+
+.clear,
+.clear::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.center {
+  text-align: center;
+}
+
+/*Grid*/
+@media screen and (min-width: 768px) {
+  .contenedor-grid{
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 15px;
+  }
+  .contenedor-grid::after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+  [class*="columnas"]{
+    padding: 0 10px;
+    float: left;
+  }
+  .columnas1-4{
+    width: 25%;
+  }
+  .columnas2-4{
+    width: 50%;
+  }
+  .columnas3-4{
+    width: 75%;
+  }
+  .columnas1-3{
+    width: 33.3%;
+  }
+  .columnas2-3{
+    width: 66.6%;
+  }
+}
+
+/*Ajustando el titulo de la informacion*/
+.encabezado {
+  text-transform: uppercase;
+  text-align: center;
+  color: #278f02;
+  font-size: 28px;
+  margin-bottom: 80px;
+}
+
+.encabezado span {
+ font-size: 20px;
+ display: table;
+ margin: 0 auto;
+}
+
+img.planta {
+  height: 50px;
+}
+
+blockquote {
+  color: #3B9009;
+  font-size: 28px;
+  border-left: 10px solid #3B9009;
+  padding: 9px;
+}
+
+/*Distancia entre las lineas del texto*/
+.contenido-principal p {
+  line-height: 10px;
+}
+
+/*Centrar la imagen*/
+.imagen-principal {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/*Agrandar la imagen y colocar un margen inferior*/
+img.efecto-imagen {
+  width: 75%;
+  margin-bottom: 90px;
+}
+
+/*Rotar la imagen*/
+.efecto-imagen {
+  transform: rotate(-10deg);
+}
+
+/*Header*/
 div.hero {
   background-image: url(../img/background01.jpg);
   height: 100vh;
