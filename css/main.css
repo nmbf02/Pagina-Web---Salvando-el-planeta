@@ -184,6 +184,7 @@ p, li {
  font-size: 20px;
  display: table;
  margin: 0 auto;
+ color: #1ed223;
 }
 
 img.planta {
@@ -226,6 +227,7 @@ div.hero {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 div.contenido-header {
