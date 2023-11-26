@@ -447,6 +447,34 @@ div.contenido-caja h2{
   margin: 20px;
 }
 
+/*Galeria*/
+.galeria {
+  text-align: center;
+  margin-top: -60px;
+}
+
+div.galeria a {
+  display: inline-block;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+/*Mapa*/
+div.mapa {
+  height: 450px;
+  background-image: url(../img/separador.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 768px) {
+  div.mapa {
+    height: 150px;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
 
 /* ==========================================================================
    Helper classes
