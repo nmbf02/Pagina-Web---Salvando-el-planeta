@@ -510,12 +510,12 @@ footer .ultimos-tweets {
 
 /* CSS - Redes sociales*/
 
-footer nav .redes-sociales {
+footer nav.redes-sociales {
   text-align: center;
   float: left;
 }
 
-p.copyright {
+p.copyrigth {
   background-color: #614a8b;
   color: white;
   font-family: 'Lato', sans-serif;
@@ -525,15 +525,50 @@ p.copyright {
   text-align: center;
 }
 
-nav .redes-sociales {
+nav.redes-sociales {
   text-align: center;
 }
 
-nav .redes-sociales {
+nav.redes-sociales {
   color: white;
   font-size: 2.5em;
   margin-right: 20px;
 }
+
+/* Color para Facebook */
+.fa-facebook {
+  color: #3b5998; 
+}
+
+/* Color para Instagram */
+.fa-instagram {
+  color: #e4405f;
+}
+
+/* Color para Twitter */
+.fa-twitter {
+  color: #55acee; 
+}
+
+/* Color para Pinterest */
+.fa-pinterest {
+  color: #bd081c; 
+}
+
+/* Color para YouTube */
+.fa-youtube {
+  color: #ff0000; 
+}
+
+.redes-sociales a {
+  margin-right: 10px;
+}
+
+.redes-sociales a:last-child{
+  margin-right: 0;
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
